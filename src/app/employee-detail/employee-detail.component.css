@@ -1,0 +1,22 @@
+.employee-card{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-color:rgb(103,168,105);
+}
+
+.employee-card-title{
+    background-color: rgb(103,168,105);
+    color: white;
+    padding: 0.2rem;
+}
+
+.btn-outline-green {
+    color:rgb(103,168,105);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(103,168,105);
+}
+
+

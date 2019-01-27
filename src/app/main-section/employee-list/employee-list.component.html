@@ -1,0 +1,66 @@
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Disable Employee</h4>
+  </div>
+  <div class="modal-body">
+    <div *ngIf="modalActionType === 'Disable'; else reset">
+      <p>Do you want to disable ?</p>
+    </div>
+    
+    <ng-template #reset>
+      <p>Do you want to reset password ?</p>
+    </ng-template>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-success" (click)="modal.close('Save')">Save</button>
+    <button type="button" class="btn btn-warning" (click)="modal.close('Cancel')">Cancel</button>
+  </div>
+</ng-template>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name(En)</th>
+      <th scope="col">Name (Ar)</th>
+      <th scope="col">Status</th>
+      <th scope="col">User Code</th>
+      <th scope="col">Grp No</th>
+      <th scope="col">Updated On</th>
+      <th>View/Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>EMP28 (EN)</td>
+      <td>EMP28 (AR)</td>
+      <td>Enabled</td>
+      <td>admin4</td>
+      <td>1234</td>
+      <td>01/18/2019 12:00 AM</td>
+      <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <a class="dropdown-item" routerLink="/employee-detail">Edit</a>
+          <a class="dropdown-item" (click)="openModal(content,'Disable')">Disable</a>
+          <a class="dropdown-item" (click)="openModal(content,'Reset')">Reset Password</a>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>EMP28 (EN)</td>
+      <td>EMP28 (AR)</td>
+      <td>Enabled</td>
+      <td>admin4</td>
+      <td>1234</td>
+      <td>01/18/2019 12:00 AM</td>
+      <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
+        <div class="dropdown-menu" ngbDropdownMenu>
+          <a class="dropdown-item" routerLink="/employee-detail">Edit</a>
+          <a class="dropdown-item">Disable</a>
+          <a class="dropdown-item">Reset Password</a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

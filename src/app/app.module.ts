@@ -8,16 +8,28 @@ import { MainSectionComponent } from './main-section/main-section.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeeListComponent } from './main-section/employee-list/employee-list.component';
+import { OfficeListComponent } from './main-section/office-list/office-list.component';
+import { AuditTrailComponent } from './main-section/audit-trail/audit-trail.component';
+import { LocationDetailComponent } from './location-detail/location-detail.component';
 
 const appRoutes: Routes = [
   { path: 'main-section', component: MainSectionComponent,children: [
       {
         path: 'employees-list',
         component: EmployeeListComponent
+      },
+      {
+        path: 'office-list',
+        component: OfficeListComponent
+      },
+      {
+        path: 'audit-trail',
+        component: AuditTrailComponent
       }
     ] 
   },
   { path: 'employee-detail', component: EmployeeDetailComponent },
+  { path: 'location-detail', component: LocationDetailComponent },
   { path: '',   redirectTo: '/main-section/employees-list', pathMatch: 'full' },
 ];
 @NgModule({
@@ -26,7 +38,10 @@ const appRoutes: Routes = [
     LeftPanelComponent,
     MainSectionComponent,
     EmployeeDetailComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    OfficeListComponent,
+    AuditTrailComponent,
+    LocationDetailComponent
   ],
   imports: [
     NgbModule,

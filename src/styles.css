@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+
+.left-panel{
+    background-color: rgb(103,168,105);
+    color: white;
+}
+
+.left-panel h2 {
+    font-weight: 100;
+}
+
+.left-panel hr {
+    display: block;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+.user-avatar {
+    width: 125px;
+    height: 125px;
+}
+
+.btn-outline-white {
+    color:white;
+    background-color: transparent;
+    background-image: none;
+    border-color: white;
+}
+
+.left-panel button {
+    display: block;
+}
+
+.link-color {
+    color:white;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+.main-section {
+    background-color: rgb(236,240,241);
+}
+
+.main-section-jumbotron {
+    background-color: #fff;
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

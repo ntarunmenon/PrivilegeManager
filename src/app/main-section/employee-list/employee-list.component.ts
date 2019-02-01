@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { MainSectionContentService } from '../main-section-content-service';
+import { EmployeeService } from 'src/app/employee.service';
+import { Employee } from 'src/app/model/employee';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-employee-list',
@@ -10,9 +13,11 @@ import { MainSectionContentService } from '../main-section-content-service';
 export class EmployeeListComponent implements OnInit {
 
   modalActionType:string = "NONE";
+  employees$: Observable<Employee[]>;
 
   constructor(private modalService: NgbModal,
-    private mainSectionContentService:MainSectionContentService) {}
+    private mainSectionContentService:MainSectionContentService,
+    private employeeService:EmployeeService) {}
 
     ngOnInit() {
       this.mainSectionContentService.announceContent({
@@ -21,6 +26,8 @@ export class EmployeeListComponent implements OnInit {
         sectionheading:'Employee List',
         buttontext:'Create Employee'
       });
+
+      this.employees$ = this.employeeService.getEmployees();
     }
 
   openModal(content,modalActionType) {

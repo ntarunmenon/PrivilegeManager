@@ -1,0 +1,7 @@
+{
+    "/PrivilegeSystem": {
+    "target": "http://localhost:3004/PrivilegeSystem",
+    "secure": false,
+    "pathRewrite": {"^/PrivilegeSystem" : ""}
+    }
+}

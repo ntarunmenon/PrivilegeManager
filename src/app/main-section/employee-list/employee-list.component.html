@@ -30,35 +30,19 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr *ngFor="let employee of (employees$ | async)">
       <th scope="row">1</th>
-      <td>EMP28 (EN)</td>
-      <td>EMP28 (AR)</td>
+      <td>{{employee.empNameEn}}</td>
+      <td>{{employee.empNameAr}}</td>
       <td>Enabled</td>
-      <td>admin4</td>
-      <td>1234</td>
-      <td>01/18/2019 12:00 AM</td>
+      <td>{{employee.empCode}}</td>
+      <td>{{employee.empGprNo}}</td>
+      <td>{{employee.modifiedDate}}</td>
       <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
         <div class="dropdown-menu" ngbDropdownMenu>
           <a class="dropdown-item" routerLink="/employee-detail">Edit</a>
           <a class="dropdown-item" (click)="openModal(content,'Disable')">Disable</a>
           <a class="dropdown-item" (click)="openModal(content,'Reset')">Reset Password</a>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>EMP28 (EN)</td>
-      <td>EMP28 (AR)</td>
-      <td>Enabled</td>
-      <td>admin4</td>
-      <td>1234</td>
-      <td>01/18/2019 12:00 AM</td>
-      <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
-        <div class="dropdown-menu" ngbDropdownMenu>
-          <a class="dropdown-item" routerLink="/employee-detail">Edit</a>
-          <a class="dropdown-item">Disable</a>
-          <a class="dropdown-item">Reset Password</a>
         </div>
       </td>
     </tr>

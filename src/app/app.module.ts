@@ -12,6 +12,7 @@ import { OfficeListComponent } from './main-section/office-list/office-list.comp
 import { AuditTrailComponent } from './main-section/audit-trail/audit-trail.component';
 import { LocationDetailComponent } from './location-detail/location-detail.component';
 import { MainSectionContentService } from './main-section/main-section-content-service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'main-section', component: MainSectionComponent,children: [
@@ -47,6 +48,7 @@ const appRoutes: Routes = [
   imports: [
     NgbModule,
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only

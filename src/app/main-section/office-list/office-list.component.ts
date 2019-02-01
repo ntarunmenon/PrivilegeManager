@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainSectionContentService } from '../main-section-content-service';
 
 @Component({
   selector: 'app-office-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OfficeListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mainSectionContentService:MainSectionContentService) { }
 
   ngOnInit() {
+    this.mainSectionContentService.announceContent({
+      mainheading:'Employee Locations',
+      mainsubheading:'To Manage Employee locations',
+      sectionheading:'Employee Office Locations',
+      buttontext:'Create Location'
+    });
   }
 
 }

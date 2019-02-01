@@ -11,6 +11,7 @@ import { EmployeeListComponent } from './main-section/employee-list/employee-lis
 import { OfficeListComponent } from './main-section/office-list/office-list.component';
 import { AuditTrailComponent } from './main-section/audit-trail/audit-trail.component';
 import { LocationDetailComponent } from './location-detail/location-detail.component';
+import { MainSectionContentService } from './main-section/main-section-content-service';
 
 const appRoutes: Routes = [
   { path: 'main-section', component: MainSectionComponent,children: [

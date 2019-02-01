@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { MainSectionContentService } from './main-section-content-service';
+import { MainSectionContent } from '../model/main-section-content';
 
 @Component({
   selector: 'app-main-section',
@@ -8,8 +9,18 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class MainSectionComponent implements OnInit {
 
-  constructor() {}
+
+  mainSectionContent:MainSectionContent;
+
+  constructor(private mainSectionContentService:MainSectionContentService) { }
 
   ngOnInit() {
+    this.mainSectionContentService.contentAnnounce$
+    .subscribe(mainSectionContent => 
+      {
+        this.mainSectionContent = mainSectionContent
+        console.log(this.mainSectionContent);
+      }
+      );
   }
 }

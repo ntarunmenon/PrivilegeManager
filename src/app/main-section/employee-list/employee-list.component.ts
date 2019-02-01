@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { MainSectionContentService } from '../main-section-content-service';
 
 @Component({
   selector: 'app-employee-list',
@@ -10,11 +11,17 @@ export class EmployeeListComponent implements OnInit {
 
   modalActionType:string = "NONE";
 
+  constructor(private modalService: NgbModal,
+    private mainSectionContentService:MainSectionContentService) {}
 
-  constructor(private modalService: NgbModal) {}
-
-  ngOnInit() {
-  }
+    ngOnInit() {
+      this.mainSectionContentService.announceContent({
+        mainheading:'Employee Manger',
+        mainsubheading:'To manage SmartAmer Employees',
+        sectionheading:'Employee List',
+        buttontext:'Create Employee'
+      });
+    }
 
   openModal(content,modalActionType) {
     this.modalActionType = modalActionType;

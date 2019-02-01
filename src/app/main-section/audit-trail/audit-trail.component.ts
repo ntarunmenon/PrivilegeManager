@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainSectionContentService } from '../main-section-content-service';
 
 @Component({
   selector: 'app-audit-trail',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuditTrailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mainSectionContentService:MainSectionContentService) { }
 
   ngOnInit() {
+    this.mainSectionContentService.announceContent({
+      mainheading:'Employee Activities',
+      mainsubheading:' To list all the activities performed',
+      sectionheading:'Employee Activity'
+    });
   }
 
 }

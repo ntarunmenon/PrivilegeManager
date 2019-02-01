@@ -1,0 +1,6 @@
+{
+  "/PrivilegeSystem/rest/emp/getAll": "/employees",
+  "/PrivilegeSystem/rest/location/getAllActive": "/locations",
+  "/PrivilegeSystem/rest/emp": "/user",
+  "/PrivilegeSystem/rest/emp/aduitLog": "/auditlogs"
+}

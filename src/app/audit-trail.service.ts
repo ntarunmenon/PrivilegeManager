@@ -14,8 +14,6 @@ export class AuditTrailService {
   auditTrailUrl = '/PrivilegeSystem/rest/emp/aduitLog';
 
   public getAuditTrails() {
-   console.log('inside');
-    
    return this.http.get<AuditTrail[]>(this.auditTrailUrl)
     .pipe(
       map((data :Object[]) =>  {

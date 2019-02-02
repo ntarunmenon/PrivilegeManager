@@ -8,10 +8,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr *ngFor="let office of (officeLocations$ | async)">
       <th scope="row">1</th>
-      <td>HQ Legal Advice (EN)</td>
-      <td>HQ Legal Advice (AR)</td>
+      <td>{{office.locNameEn}}</td>
+      <td>{{office.locNameAr}}</td>
       <td ><i class="fas fa-edit" routerLink="/location-detail"></i></td>
     </tr>
   </tbody>

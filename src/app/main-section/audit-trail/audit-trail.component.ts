@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MainSectionContentService } from '../main-section-content-service';
+import { AuditTrailService } from 'src/app/audit-trail.service';
+import { AuditTrail } from 'src/app/model/audit-trail';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-audit-trail',
@@ -8,7 +11,10 @@ import { MainSectionContentService } from '../main-section-content-service';
 })
 export class AuditTrailComponent implements OnInit {
 
-  constructor(private mainSectionContentService:MainSectionContentService) { }
+  auditTrails$:Observable<AuditTrail[]>;
+  
+  constructor(private mainSectionContentService:MainSectionContentService,
+    private auditTrailService:AuditTrailService) { }
 
   ngOnInit() {
     this.mainSectionContentService.announceContent({
@@ -16,6 +22,8 @@ export class AuditTrailComponent implements OnInit {
       mainsubheading:' To list all the activities performed',
       sectionheading:'Employee Activity'
     });
+
+    this.auditTrails$ = this.auditTrailService.getAuditTrails();
   }
 
 }

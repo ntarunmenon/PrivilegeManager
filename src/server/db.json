@@ -27,7 +27,7 @@
         "empLogId": 26,
         "logAction": "Create Employee",
         "remarks": null,
-        "loggedDateTime": 1546696800000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -37,7 +37,7 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
             "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -45,8 +45,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -75,7 +75,7 @@
             "empCode": "arunm",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
             "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -83,8 +83,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "arunm",
@@ -109,7 +109,7 @@
         "empLogId": 27,
         "logAction": "Create Employee",
         "remarks": null,
-        "loggedDateTime": 1546696800000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -119,7 +119,7 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
              "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -127,8 +127,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -157,7 +157,7 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
              "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -165,8 +165,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -191,7 +191,7 @@
         "empLogId": 45,
         "logAction": "Update Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -201,7 +201,7 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
              "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -209,8 +209,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -239,7 +239,7 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
             "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -247,8 +247,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -273,7 +273,7 @@
         "empLogId": 46,
         "logAction": "Update Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -283,7 +283,7 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
              "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -291,8 +291,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -321,7 +321,7 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
              "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -329,8 +329,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -355,7 +355,7 @@
         "empLogId": 65,
         "logAction": "Update Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -365,7 +365,7 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
+            "createDate": "2019-01-01",
             "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
@@ -373,8 +373,8 @@
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -403,16 +403,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -437,7 +437,7 @@
         "empLogId": 66,
         "logAction": "Update Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -447,16 +447,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -485,16 +485,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -519,7 +519,7 @@
         "empLogId": 67,
         "logAction": "Disable Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -529,16 +529,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -567,16 +567,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -601,7 +601,7 @@
         "empLogId": 68,
         "logAction": "Disable Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -611,16 +611,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -649,16 +649,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -683,7 +683,7 @@
         "empLogId": 69,
         "logAction": "Reset Employee Password",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -693,16 +693,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -731,16 +731,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -765,7 +765,7 @@
         "empLogId": 70,
         "logAction": "Reset Employee Password",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -775,16 +775,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -813,16 +813,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -847,7 +847,7 @@
         "empLogId": 71,
         "logAction": "Enable Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -857,16 +857,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -895,16 +895,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -929,7 +929,7 @@
         "empLogId": 72,
         "logAction": "Enable Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -939,16 +939,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -977,16 +977,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -1011,7 +1011,7 @@
         "empLogId": 73,
         "logAction": "Disable Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -1021,16 +1021,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -1059,16 +1059,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -1093,7 +1093,7 @@
         "empLogId": 74,
         "logAction": "Update Employee",
         "remarks": null,
-        "loggedDateTime": 1546783200000,
+        "loggedDateTime": "2019-01-01",
         "empId": {
             "mntEmpId": "MjVzVHIxbkc=",
             "empNameEn": "EMP25 (EN)",
@@ -1103,16 +1103,16 @@
             "empCode": "admin1",
             "empTelNo": null,
             "empEmail": "SmartAmer.Support@emaratech.ae",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546696800000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "admin1",
@@ -1141,16 +1141,16 @@
             "empCode": "nitya",
             "empTelNo": "0557807815",
             "empEmail": "ntarunmenon@gmail.com",
-            "createDate": 1546696800000,
-            "modifiedDate": 1546783200000,
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01",
             "empRemark": null,
             "empLocationId": {
                 "locationId": 1,
                 "locNameEn": "HQ Legal Advice (EN)",
                 "locNameAr": "HQ Legal Advice (AR)",
                 "isEnabled": "Y",
-                "createDate": -62144445600000,
-                "modifiedDate": -62144445600000
+                "createDate": "2019-01-01",
+                "modifiedDate": "2019-01-01"
             },
             "enabled": true,
             "username": "nitya",
@@ -1178,8 +1178,8 @@
         "locNameEn": "HQ Legal Advice (EN)",
         "locNameAr": "HQ Legal Advice (AR)",
         "isEnabled": "Y",
-        "createDate": -62144445600000,
-        "modifiedDate": -62144445600000
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01"
     }
 ],
   "employees": [
@@ -1192,16 +1192,16 @@
         "empCode": "admin1",
         "empTelNo": null,
         "empEmail": "SmartAmer.Support@emaratech.ae",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "admin1",
@@ -1230,16 +1230,16 @@
         "empCode": "admin2",
         "empTelNo": null,
         "empEmail": "SmartAmer.Support@emaratech.ae",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "admin2",
@@ -1268,16 +1268,16 @@
         "empCode": "admin3",
         "empTelNo": null,
         "empEmail": "SmartAmer.Support@emaratech.ae",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "admin3",
@@ -1306,16 +1306,16 @@
         "empCode": "arunm",
         "empTelNo": "0557807815",
         "empEmail": "ntarunmenon@gmail.com",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "arunm",
@@ -1344,16 +1344,16 @@
         "empCode": "arunm",
         "empTelNo": "0557807815",
         "empEmail": "ntarunmenon@gmail.com",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "arunm",
@@ -1382,16 +1382,16 @@
         "empCode": "arunm",
         "empTelNo": "0557807815",
         "empEmail": "ntarunmenon@gmail.com",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546696800000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "arunm",
@@ -1420,16 +1420,16 @@
         "empCode": "nitya",
         "empTelNo": "0557807815",
         "empEmail": "ntarunmenon@gmail.com",
-        "createDate": 1546696800000,
-        "modifiedDate": 1546783200000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "nitya",
@@ -1458,16 +1458,16 @@
         "empCode": "admin4",
         "empTelNo": null,
         "empEmail": "SmartAmer.Support@emaratech.ae",
-        "createDate": 1546696800000,
-        "modifiedDate": 1547733600000,
+        "createDate": "2019-01-01",
+        "modifiedDate": "2019-01-01",
         "empRemark": null,
         "empLocationId": {
             "locationId": 1,
             "locNameEn": "HQ Legal Advice (EN)",
             "locNameAr": "HQ Legal Advice (AR)",
             "isEnabled": "Y",
-            "createDate": -62144445600000,
-            "modifiedDate": -62144445600000
+            "createDate": "2019-01-01",
+            "modifiedDate": "2019-01-01"
         },
         "enabled": true,
         "username": "admin4",

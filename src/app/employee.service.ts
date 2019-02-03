@@ -7,7 +7,7 @@ import { Employee } from './model/employee';
 })
 export class EmployeeService {
 
-  employeesUrl = '/PrivilegeSystem/rest/emp/getAll';
+  employeesUrl = '/api/employees';
 
   constructor(private http: HttpClient) { }
 

@@ -11,7 +11,7 @@ export class AuditTrailService {
 
   constructor(private http: HttpClient) { }
   
-  auditTrailUrl = '/PrivilegeSystem/rest/emp/aduitLog';
+  auditTrailUrl = '/api/auditlogs';
 
   public getAuditTrails() {
    return this.http.get<AuditTrail[]>(this.auditTrailUrl)

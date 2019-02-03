@@ -9,7 +9,7 @@ export class OfficeService {
 
   constructor(private http: HttpClient) { }
   
-  officeUrl = '/PrivilegeSystem/rest/location/getAllActive';
+  officeUrl = '/api/locations';
 
   public getOfficeLocations() {
     return this.http.get<Office[]>(this.officeUrl);

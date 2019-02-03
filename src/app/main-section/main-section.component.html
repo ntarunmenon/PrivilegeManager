@@ -1,6 +1,12 @@
   <h2>{{mainSectionContent.mainheading}} - <small>{{mainSectionContent.mainsubheading}}</small></h2>
   <div class="jumbotron main-section-jumbotron">
     <h3>{{mainSectionContent.sectionheading}}</h3>
+    <ngb-alert [dismissible]="false" type="success" *ngIf="showResetMessage"> 
+      Password has been reset successfully 
+    </ngb-alert>
+    <ngb-alert [dismissible]="false" type="success" *ngIf="showDisableMessage">
+      Employee has been disabled successfully 
+    </ngb-alert>
     <div>
       <router-outlet></router-outlet>
     </div>

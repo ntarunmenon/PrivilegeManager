@@ -20,6 +20,7 @@ export class EmployeeListComponent implements OnInit {
     private employeeService:EmployeeService) {}
 
     ngOnInit() {
+      this. modalActionType = "NONE";
       this.mainSectionContentService.announceContent({
         mainheading:'Employee Manger',
         mainsubheading:'To manage SmartAmer Employees',
@@ -34,6 +35,13 @@ export class EmployeeListComponent implements OnInit {
     this.modalActionType = modalActionType;
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'})
     .result.then((saveOrCancel) => {
+      if(saveOrCancel === 'Save' ){
+        if(this.modalActionType === 'Disable'){
+          this.mainSectionContentService.actionSuccessEvent('DISABLE');
+        } else {
+          this.mainSectionContentService.actionSuccessEvent('RESET');
+        }
+      }
     }, (dismissReason) => {
       this.modalActionType = 'NONE';
     });

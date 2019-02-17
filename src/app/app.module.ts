@@ -13,26 +13,32 @@ import { AuditTrailComponent } from './main-section/audit-trail/audit-trail.comp
 import { LocationDetailComponent } from './location-detail/location-detail.component';
 import { MainSectionContentService } from './main-section/main-section-content-service';
 import { HttpClientModule } from '@angular/common/http';
+import { LandingComponent } from './landing/landing.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
-  { path: 'main-section', component: MainSectionComponent,children: [
-      {
-        path: 'employees-list',
-        component: EmployeeListComponent
-      },
-      {
-        path: 'office-list',
-        component: OfficeListComponent
-      },
-      {
-        path: 'audit-trail',
-        component: AuditTrailComponent
-      }
-    ] 
-  },
+  {path: 'login', component: LoginComponent},
+  {path: 'landing', component: LandingComponent,children: [
+      { path: 'main-section', component: MainSectionComponent,children: [
+        {
+          path: 'employees-list',
+          component: EmployeeListComponent
+        },
+        {
+          path: 'office-list',
+          component: OfficeListComponent
+        },
+        {
+          path: 'audit-trail',
+          component: AuditTrailComponent
+        }
+      ]
+    }
+  ]
+} ,
   { path: 'employee-detail', component: EmployeeDetailComponent },
   { path: 'location-detail', component: LocationDetailComponent },
-  { path: '',   redirectTo: '/main-section/employees-list', pathMatch: 'full' },
+  { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
 @NgModule({
   declarations: [
@@ -43,7 +49,9 @@ const appRoutes: Routes = [
     EmployeeListComponent,
     OfficeListComponent,
     AuditTrailComponent,
-    LocationDetailComponent
+    LocationDetailComponent,
+    LandingComponent,
+    LoginComponent
   ],
   imports: [
     NgbModule,

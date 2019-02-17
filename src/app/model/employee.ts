@@ -6,4 +6,6 @@ export interface Employee {
     isActive:boolean,
     empCode:string,
     modifiedDate:Date;
+    empEmail:Date;
+    empTelNo:Date;
 }

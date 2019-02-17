@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { EmployeeService } from '../employee.service';
+import { filter } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { Employee } from '../model/employee';
 
 @Component({
   selector: 'app-employee-detail',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeDetailComponent implements OnInit {
 
-  constructor() { }
+  private employeeSelected$:Observable<Employee>;
+  employee:Employee;
+  constructor(private employeeService:EmployeeService) { }
 
   ngOnInit() {
+    this.employeeService.employeeSelected$.pipe(
+      filter(employee => employee != null)
+    ).subscribe(emplyee => this.employee = emplyee);
   }
 
 }

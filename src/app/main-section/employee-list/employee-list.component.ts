@@ -4,6 +4,7 @@ import { MainSectionContentService } from '../main-section-content-service';
 import { EmployeeService } from 'src/app/employee.service';
 import { Employee } from 'src/app/model/employee';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
@@ -17,7 +18,8 @@ export class EmployeeListComponent implements OnInit {
 
   constructor(private modalService: NgbModal,
     private mainSectionContentService:MainSectionContentService,
-    private employeeService:EmployeeService) {}
+    private employeeService:EmployeeService,
+    private router:Router) {}
 
     ngOnInit() {
       this. modalActionType = "NONE";
@@ -46,6 +48,11 @@ export class EmployeeListComponent implements OnInit {
       this.modalActionType = 'NONE';
     });
     return false;
+  }
+
+  editEmployee(employee:Employee){
+    this.employeeService.selectEmployee(employee);
+    this.router.navigate(['/employee-detail']);
   }
 
 }

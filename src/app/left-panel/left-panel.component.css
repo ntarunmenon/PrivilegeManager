@@ -11,6 +11,8 @@
 .user-avatar {
     width: 125px;
     height: 125px;
+    display:block;
+    margin:auto;
 }
 
 .left-panel button {
@@ -27,4 +29,8 @@
     background-color: transparent;
     background-image: none;
     border-color: white;
+}
+
+.logout-change-password-block {
+    height: 20%;
 }

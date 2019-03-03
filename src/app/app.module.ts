@@ -15,6 +15,7 @@ import { MainSectionContentService } from './main-section/main-section-content-s
 import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
     NgbModule,
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only

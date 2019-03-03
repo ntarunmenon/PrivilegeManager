@@ -1,3 +1,6 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
 .wrapper {
     display: flex;
     width: 100%;
@@ -5,8 +8,8 @@
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 22%;
+    max-width: 22%;
     min-height: 100vh;
 }
 

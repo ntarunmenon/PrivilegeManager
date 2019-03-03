@@ -17,13 +17,40 @@ server.post('/api/login', (req, res) => {
 
   const jwtBearerToken = jwt.sign({}, 'secret123', {
       algorithm: 'HS256',
-      expiresIn: 120,
-      subject: username
+      expiresIn: 300,
+      subject: JSON.stringify({
+        username: 'john',
+        roles : ['officer'] 
+      })
   })
   res.status(200).json({
       idToken: jwtBearerToken, 
-      expiresIn: 120
+      expiresIn: 30,
+      user: {
+        username: 'john',
+        roles : ['officer'] 
+      }
     });
+})
+
+server.use((req, res, next) => {
+  console.log(req.path);
+  if (req.path !== '/api/login') {
+     const authHeader = req.get('X-Auth-Token');
+     console.log(authHeader)
+     if (authHeader) {
+        try {
+          const decoded = jwt.verify(authHeader,'secret123');
+          console.log(decoded);
+        } catch (e) {
+          res.status(401).send();
+        }
+     } else {
+      res.status(401).send();
+     }
+  }
+  // Continue to JSON Server router
+  next()
 })
 
 server.use('/api', router);

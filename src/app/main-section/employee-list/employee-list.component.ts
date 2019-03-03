@@ -25,7 +25,7 @@ export class EmployeeListComponent implements OnInit {
       this. modalActionType = "NONE";
       this.mainSectionContentService.announceContent({
         mainheading:'Employee Manger',
-        mainsubheading:'To manage SmartAmer Employees',
+        mainsubheading:'To manage PrivilegeManager Employees',
         sectionheading:'Employee List',
         buttontext:'Create Employee'
       });

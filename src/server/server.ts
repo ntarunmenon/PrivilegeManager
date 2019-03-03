@@ -24,11 +24,10 @@ server.post('/api/login', (req, res) => {
       })
   })
   res.status(200).json({
-      idToken: jwtBearerToken, 
-      expiresIn: 30,
       user: {
         username: 'john',
-        roles : ['officer'] 
+        roles : ['officer'],
+        idToken: jwtBearerToken
       }
     });
 })

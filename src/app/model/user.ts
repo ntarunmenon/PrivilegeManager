@@ -1,4 +1,5 @@
 export interface User {
     username: String;
-    roles: String[]
+    roles: String[],
+    idToken:string
 }

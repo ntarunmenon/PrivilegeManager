@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../login.service';
 import { Router } from '@angular/router';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -19,12 +20,14 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.loginService.login(this.username,this.password)
-    .subscribe(user => {
-      console.log(`user is ${user}`)
-      if (user != null) {
-        console.log(`logged in ${user}`)
-        this.router.navigate(['/landing/main-section/employees-list']);
-      }
-    });
+    .pipe(first())
+    .subscribe(
+        data => {
+          this.router.navigate(['/landing/main-section/employees-list']);
+      },
+        error => {
+          console.log('Error during login');
+        }
+    );
   }
 }

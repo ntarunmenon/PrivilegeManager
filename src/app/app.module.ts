@@ -40,20 +40,18 @@ const appRoutes: Routes = [
         {
           path: 'audit-trail',
           component: AuditTrailComponent
-        }
+        },
+        { 
+          path: 'employee-detail', 
+          component: EmployeeDetailComponent
+       },
+       { path: 'location-detail', 
+         component: LocationDetailComponent
+       }
       ]
     }
   ]
 } ,
-  { 
-    path: 'employee-detail', 
-    component: EmployeeDetailComponent,
-    canActivate: [AuthGuard],
- },
-  { path: 'location-detail', 
-    component: LocationDetailComponent,
-    canActivate: [AuthGuard] 
-  },
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
 @NgModule({

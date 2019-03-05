@@ -23,11 +23,9 @@ server.post('/api/login', function (req, res) {
         })
     });
     res.status(200).json({
-        user: {
-            username: 'john',
-            roles: ['officer'],
-            idToken: jwtBearerToken
-        }
+        username: 'john',
+        roles: ['officer'],
+        idToken: jwtBearerToken
     });
 });
 server.use(function (req, res, next) {
@@ -39,6 +37,7 @@ server.use(function (req, res, next) {
             try {
                 var decoded = jwt.verify(authHeader, 'secret123');
                 console.log(decoded);
+                next();
             }
             catch (e) {
                 res.status(401).send();
@@ -48,8 +47,6 @@ server.use(function (req, res, next) {
             res.status(401).send();
         }
     }
-    // Continue to JSON Server router
-    next();
 });
 server.use('/api', router);
 server.listen(3004, function () {

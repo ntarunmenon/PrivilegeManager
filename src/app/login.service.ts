@@ -29,12 +29,14 @@ export class LoginService {
     }
     ).pipe(
       map (user => {
-        if (user && user.idToken) {
+       console.log(user.idToken);
+        if (user && user["idToken"]) {
           // store user details and jwt token in local storage to keep user logged in between page refreshes
+          console.log('store user details');
           localStorage.setItem('currentUser', JSON.stringify(user));
           this.currentUserSubject.next(user);
         }
-        console.log(`logged in as ${user} with JWT  ${ localStorage.idToken}`);
+        console.log(`logged in as ${user} with JWT  ${ localStorage.getItem('currentUser')}`);
         return user;
     }));
   }

@@ -24,12 +24,11 @@ server.post('/api/login', (req, res) => {
       })
   })
   res.status(200).json({
-      user: {
         username: 'john',
         roles : ['officer'],
         idToken: jwtBearerToken
       }
-    });
+    );
 })
 
 server.use((req, res, next) => {
@@ -41,6 +40,7 @@ server.use((req, res, next) => {
         try {
           const decoded = jwt.verify(authHeader,'secret123');
           console.log(decoded);
+          next();
         } catch (e) {
           res.status(401).send();
         }
@@ -48,8 +48,6 @@ server.use((req, res, next) => {
       res.status(401).send();
      }
   }
-  // Continue to JSON Server router
-  next()
 })
 
 server.use('/api', router);

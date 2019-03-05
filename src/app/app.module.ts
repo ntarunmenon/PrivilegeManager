@@ -16,11 +16,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import { httpInterceptorProviders } from './helpers';
+import { AuthGuard } from './helpers/auth.guard';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'landing', component: LandingComponent,children: [
-      { path: 'main-section', component: MainSectionComponent,children: [
+  {path: 'landing', 
+  component: LandingComponent,
+  canActivate: [AuthGuard],
+  children: [
+      { path: 'main-section', 
+      component: MainSectionComponent,
+      canActivateChild: [AuthGuard],
+      children: [
         {
           path: 'employees-list',
           component: EmployeeListComponent
@@ -37,8 +45,15 @@ const appRoutes: Routes = [
     }
   ]
 } ,
-  { path: 'employee-detail', component: EmployeeDetailComponent },
-  { path: 'location-detail', component: LocationDetailComponent },
+  { 
+    path: 'employee-detail', 
+    component: EmployeeDetailComponent,
+    canActivate: [AuthGuard],
+ },
+  { path: 'location-detail', 
+    component: LocationDetailComponent,
+    canActivate: [AuthGuard] 
+  },
   { path: '',   redirectTo: '/login', pathMatch: 'full' },
 ];
 @NgModule({
@@ -64,7 +79,9 @@ const appRoutes: Routes = [
       { enableTracing: false } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [
+    httpInterceptorProviders
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

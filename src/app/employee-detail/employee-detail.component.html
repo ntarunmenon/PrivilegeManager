@@ -1,51 +1,71 @@
 <div class="card employee-card">
       <h5 class="card-title employee-card-title">Card title</h5>
       <div class="card-body">
-          <form>
+          <form [formGroup]="employeeDetailForm">
               <div class="form-group">
                   <label for="nameEN">Name (En)</label>
-                  <input type="text" class="form-control" id="nameEN" aria-describedby="nameEN" placeholder="Enter name in English"
-                  value="{{employee.empNameEn}}">
+                  <input type="text" class="form-control" id="nameEN" 
+                  aria-describedby="nameEN" 
+                  placeholder="Enter name in English"
+                  formControlName="empNameEn">
                 </div>
                 <div class="form-group">
                     <label for="nameAr">Name (Ar)</label>
-                    <input type="text" class="form-control" id="nameAr" aria-describedby="nameAr" placeholder="Enter name in Arabic"
-                    value="{{employee.empNameAr}}">
+                    <input type="text" class="form-control" id="nameAr" 
+                    aria-describedby="nameAr" 
+                    placeholder="Enter name in Arabic"
+                    formControlName="empNameAr">
                   </div>
                   <div class="form-group">
                       <label for="grpNo">Group No</label>
-                      <input type="text" class="form-control" id="grpNo" aria-describedby="grpNo" placeholder="Enter Group No"
-                      value="{{employee.empGprNo}}">
+                      <input type="text" class="form-control" id="grpNo" 
+                      aria-describedby="grpNo" 
+                      placeholder="Enter Group No"
+                      formControlName="empGprNo">
                     </div>
                     <div class="form-group">
                         <label for="employeeCode">Employee Code</label>
-                        <input type="text" class="form-control" id="employeeCode" aria-describedby="employeeCode" placeholder="Enter Employee Code"
-                        value="{{employee.empCode}}">
+                        <input type="text" class="form-control" id="employeeCode" 
+                        aria-describedby="employeeCode" 
+                        placeholder="Enter Employee Code"
+                        formControlName="empCode">
                       </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="isActive">
+                        <input type="checkbox" 
+                        class="form-check-input" 
+                        id="isActive"
+                        formControlName="isActive"
+                        >
                         <label class="form-check-label" for="isActive">Is Active</label>
                       </div> 
                       <div class="form-group">
                           <label>Employee privilege</label>
-                          <select id="employeePrivelege" data-style="btn-default" class="selectpicker form-control" multiple data-max-options="2">
+                          <select id="employeePrivelege" data-style="btn-default" 
+                          class="selectpicker form-control" 
+                          formControlName="employeePriveleges"
+                          multiple data-max-options="2">
                                 <option>Mustard</option>
                                 <option>Barbecue</option>
                               </select>
                         </div> 
                     <div class="form-group">
                         <label for="phNo">Phone Number</label>
-                        <input type="text" class="form-control" id="phNo" aria-describedby="phNo" placeholder="Enter Phone No"
-                        value="{{employee.empTelNo}}">
+                        <input type="text" class="form-control" id="phNo" 
+                        aria-describedby="phNo" 
+                        placeholder="Enter Phone No"
+                        formControlName="empTelNo">
                     </div>   
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"
-                        value="{{employee.empEmail}}">
+                        <input type="email" class="form-control" id="exampleInputEmail1" 
+                        aria-describedby="emailHelp" placeholder="Enter email"
+                        formControlName="empEmail">
                       </div>  
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-success">Update</button>
-                        <button type="button" class="btn btn-outline-warning" style="margin-left:1rem" (click)="cancel()">Cancel</button>
+                        <button type="button" class="btn btn-outline-success" 
+                        [disabled]="!employeeDetailForm.valid">Update</button>
+                        <button type="button" class="btn btn-outline-warning" 
+                        style="margin-left:1rem" (click)="cancel()">Cancel</button>
                     </div>                                                        
           </form>
       </div>

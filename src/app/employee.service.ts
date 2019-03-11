@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Employee } from './model/employee';
 import { BehaviorSubject, Subject, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,12 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
 
   getEmployees() {
-    return this.http.get<Employee[]>(this.employeesUrl);
+    return this.http.get(this.employeesUrl)
+      .pipe(
+        map(data => {
+            data;
+        })
+      );
   }
 
   selectEmployee(employee:Employee){

@@ -11,11 +11,10 @@ import { EmployeeListComponent } from './main-section/employee-list/employee-lis
 import { OfficeListComponent } from './main-section/office-list/office-list.component';
 import { AuditTrailComponent } from './main-section/audit-trail/audit-trail.component';
 import { LocationDetailComponent } from './location-detail/location-detail.component';
-import { MainSectionContentService } from './main-section/main-section-content-service';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { httpInterceptorProviders } from './helpers';
 import { AuthGuard } from './helpers/auth.guard';
 
@@ -72,6 +71,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only

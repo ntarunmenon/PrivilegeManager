@@ -5,7 +5,8 @@ export interface Employee {
     empGprNo:string,
     isActive:boolean,
     empCode:string,
-    modifiedDate:Date;
-    empEmail:Date;
-    empTelNo:Date;
+    modifiedDate:Date,
+    empEmail:string,
+    empTelNo:string,
+    roles:string[]
 }

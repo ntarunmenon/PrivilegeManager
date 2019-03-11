@@ -1218,6 +1218,36 @@
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
             }
         ]
     },
@@ -1248,11 +1278,41 @@
         "credentialsNonExpired": true,
         "srvEmpRoleList": [
             {
-                "empRoleId": 26,
+                "empRoleId": 25,
                 "roleId": {
                     "srvRoleId": 5,
                     "roleName": "ROLE_SPRIVILEGE_SYS",
                     "roleDescEn": "Privilege System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }
@@ -1286,11 +1346,41 @@
         "credentialsNonExpired": true,
         "srvEmpRoleList": [
             {
-                "empRoleId": 27,
+                "empRoleId": 25,
                 "roleId": {
                     "srvRoleId": 5,
                     "roleName": "ROLE_SPRIVILEGE_SYS",
                     "roleDescEn": "Privilege System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }
@@ -1324,11 +1414,41 @@
         "credentialsNonExpired": true,
         "srvEmpRoleList": [
             {
-                "empRoleId": 1,
+                "empRoleId": 25,
                 "roleId": {
                     "srvRoleId": 5,
                     "roleName": "ROLE_SPRIVILEGE_SYS",
                     "roleDescEn": "Privilege System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }
@@ -1362,11 +1482,41 @@
         "credentialsNonExpired": true,
         "srvEmpRoleList": [
             {
-                "empRoleId": 2,
+                "empRoleId": 25,
                 "roleId": {
                     "srvRoleId": 5,
                     "roleName": "ROLE_SPRIVILEGE_SYS",
                     "roleDescEn": "Privilege System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }
@@ -1400,11 +1550,41 @@
         "credentialsNonExpired": true,
         "srvEmpRoleList": [
             {
-                "empRoleId": 3,
+                "empRoleId": 25,
                 "roleId": {
                     "srvRoleId": 5,
                     "roleName": "ROLE_SPRIVILEGE_SYS",
                     "roleDescEn": "Privilege System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 26,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_MANAGER",
+                    "roleDescEn": "Trading System Manager",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 27,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "TRADING_SYSTEM_OFFICER",
+                    "roleDescEn": "Trading System Officer",
+                    "roleDescAr": null,
+                    "isEnabled": "Y"
+                }
+            },
+            {
+                "empRoleId": 28,
+                "roleId": {
+                    "srvRoleId": 5,
+                    "roleName": "SALES_MANAGER",
+                    "roleDescEn": "Sales Manager",
                     "roleDescAr": null,
                     "isEnabled": "Y"
                 }

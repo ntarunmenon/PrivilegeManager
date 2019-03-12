@@ -16,10 +16,31 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
 
   getEmployees() {
-    return this.http.get(this.employeesUrl)
+    return this.http.get<Employee[]>(this.employeesUrl)
       .pipe(
-        map(data => {
-            data;
+        map((data :Object[]) => {
+          let employees:Employee[] = [];  
+          let roles:string[] = [];
+
+          data.forEach(function (element) {
+              element["srvEmpRoleList"].forEach((emploeeObj: any) => {
+                roles.push(emploeeObj["roleId"]["roleName"]);
+          })
+
+          employees.push({
+            mntEmpId:element["mntEmpId"],
+            empNameEn:element["empNameEn"],
+            empNameAr:element["empNameAr"],
+            empGprNo:element["empGprNo"],
+            isActive:element["isActive"],
+            empCode:element["empCode"],
+            modifiedDate:element["modifiedDate"],
+            empEmail:element["empEmail"],
+            empTelNo:element["empTelNo"],
+            roles:roles
+            });
+          })
+          return employees;
         })
       );
   }

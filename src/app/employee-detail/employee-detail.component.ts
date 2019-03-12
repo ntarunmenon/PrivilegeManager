@@ -50,7 +50,7 @@ export class EmployeeDetailComponent implements OnInit {
         isActive: employee.isActive,
         empTelNo: employee.empTelNo,
         empEmail: employee.empEmail,
-        employeePriveleges:''
+       // employeePriveleges:employee.roles
       });
   }
 

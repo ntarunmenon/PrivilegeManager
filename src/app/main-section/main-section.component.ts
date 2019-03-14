@@ -23,7 +23,6 @@ export class MainSectionComponent implements OnInit {
     .subscribe(mainSectionContent => 
       {
         this.mainSectionContent = mainSectionContent
-        console.log(this.mainSectionContent);
       }
       );
       this.actionSuccess$ = this.mainSectionContentService.actionSuccess$;

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Employee } from './model/employee';
 import { BehaviorSubject, Subject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Role } from './model/role';
 
 @Injectable({
   providedIn: 'root'
@@ -20,26 +21,30 @@ export class EmployeeService {
       .pipe(
         map((data :Object[]) => {
           let employees:Employee[] = [];  
-          let roles:string[] = [];
+         
 
           data.forEach(function (element) {
-              element["srvEmpRoleList"].forEach((emploeeObj: any) => {
-                roles.push(emploeeObj["roleId"]["roleName"]);
-          })
+            let roles:Role[] = [];  
+            element["srvEmpRoleList"].forEach((emploeeObj: any) => {
+                roles.push({
+                  srvRoleId: emploeeObj["roleId"]["srvRoleId"],
+                  roleName:emploeeObj["roleId"]["roleName"]
+                });
+              })
 
-          employees.push({
-            mntEmpId:element["mntEmpId"],
-            empNameEn:element["empNameEn"],
-            empNameAr:element["empNameAr"],
-            empGprNo:element["empGprNo"],
-            isActive:element["isActive"],
-            empCode:element["empCode"],
-            modifiedDate:element["modifiedDate"],
-            empEmail:element["empEmail"],
-            empTelNo:element["empTelNo"],
-            roles:roles
-            });
-          })
+            employees.push({
+              mntEmpId:element["mntEmpId"],
+              empNameEn:element["empNameEn"],
+              empNameAr:element["empNameAr"],
+              empGprNo:element["empGprNo"],
+              isActive:element["isActive"],
+              empCode:element["empCode"],
+              modifiedDate:element["modifiedDate"],
+              empEmail:element["empEmail"],
+              empTelNo:element["empTelNo"],
+              roles:roles
+              });
+            })
           return employees;
         })
       );

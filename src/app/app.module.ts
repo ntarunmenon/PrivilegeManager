@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { httpInterceptorProviders } from './helpers';
 import { AuthGuard } from './helpers/auth.guard';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 const appRoutes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -75,7 +76,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
-    )
+    ),
+    NgMultiSelectDropDownModule.forRoot()
   ],
   providers: [
     httpInterceptorProviders

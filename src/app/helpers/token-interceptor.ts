@@ -13,7 +13,6 @@ export class TokenInterceptor implements HttpInterceptor {
     Observable<HttpEvent<any>> {
    
     let currentUser = this.loginService.currentUserValue;
-    console.log(`inside interceptor ${currentUser}`)
         if (currentUser && currentUser.idToken) {
             req = req.clone({
                 setHeaders: { 

@@ -1,3 +1,5 @@
+import { Role } from "./role";
+
 export interface Employee {
     mntEmpId:string,
     empNameEn:string,
@@ -8,5 +10,5 @@ export interface Employee {
     modifiedDate:Date,
     empEmail:string,
     empTelNo:string,
-    roles:string[]
+    roles:Role[]
 }

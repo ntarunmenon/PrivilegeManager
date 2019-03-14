@@ -14,6 +14,10 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class EmployeeDetailComponent implements OnInit {
 
+  dropdownSettings = {};
+  dropdownList = [];
+  selectedItems = [];
+
   employeeDetailForm = new FormGroup({
     empNameEn: new FormControl(''),
     empNameAr: new FormControl(''),
@@ -32,10 +36,29 @@ export class EmployeeDetailComponent implements OnInit {
     private employeeService:EmployeeService) { }
 
   ngOnInit() {
-   
-    this.employeeService.employeeSelected$.pipe(
+
+    this.dropdownSettings = {
+      singleSelection: false,
+      idField: 'srvRoleId',
+      textField: 'roleName',
+      selectAllText: 'Select All',
+      unSelectAllText: 'UnSelect All',
+      itemsShowLimit: 3,
+      allowSearchFilter: false
+    };
+
+    this.dropdownList = [
+      { srvRoleId: 1, roleName: 'ROLE_SPRIVILEGE_SYS' },
+      { srvRoleId: 2, roleName: 'TRADING_SYSTEM_MANAGER"' },
+      { srvRoleId: 3, roleName: 'TRADING_SYSTEM_OFFICER' },
+      { srvRoleId: 4, roleName: 'SALES_MANAGER' },
+    ];
+ 
+
+   this.employeeService.employeeSelected$.pipe(
       filter(employee => employee != null)
     ).subscribe(emplyee => {
+      console.log(emplyee)
       this.employee = emplyee
       this.updateEmployeeForm(emplyee)
     });
@@ -50,7 +73,7 @@ export class EmployeeDetailComponent implements OnInit {
         isActive: employee.isActive,
         empTelNo: employee.empTelNo,
         empEmail: employee.empEmail,
-       // employeePriveleges:employee.roles
+        employeePriveleges:employee.roles
       });
   }
 

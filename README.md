@@ -4,26 +4,23 @@ Sample Write
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-## Development server
+## Details about the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. This project used json-server to mock the back end.
+2. json-server has been customised using node and typescript. The integration is ugly and needs to be improved
 
-## Code scaffolding
+## Running the project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Run `tsc src/server/server.ts` once to generate server.js
+2. ` nodemon src/server/server.js` to run the node mock server.
+3. `npm start` to run the application.
+4.  Any user name and password will get you in.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Future list of things to do.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Remove mock-server completely and replace with express and postgres.
+2. Dockerise the application.
+3. Deploy to AWS manually.
+4. Automate Deploy to AWS.
+5. Set up build pipeline so that every commit is automatically deployed to an  AWS environment.

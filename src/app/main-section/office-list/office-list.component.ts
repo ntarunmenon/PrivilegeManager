@@ -3,6 +3,7 @@ import { MainSectionContentService } from '../main-section-content-service';
 import { OfficeService } from 'src/app/office.service';
 import { Office } from 'src/app/model/office';
 import { Observable } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-office-list',
@@ -14,7 +15,8 @@ export class OfficeListComponent implements OnInit {
   officeLocations$: Observable<Office[]>;
   
   constructor(private mainSectionContentService:MainSectionContentService,
-    private officeService:OfficeService) { }
+    private officeService:OfficeService,
+    private router:Router) { }
 
   ngOnInit() {
     this.mainSectionContentService.announceContent({
@@ -26,5 +28,11 @@ export class OfficeListComponent implements OnInit {
 
     this.officeLocations$ = this.officeService.getOfficeLocations();
   }
+
+  editOffice(office:Office){
+    this.officeService.selectOffice(office);
+    this.router.navigate(['/landing/main-section/location-detail']);
+  }
+
 
 }

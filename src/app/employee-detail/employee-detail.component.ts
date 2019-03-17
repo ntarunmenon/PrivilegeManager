@@ -30,7 +30,6 @@ export class EmployeeDetailComponent implements OnInit {
   });
 
   
-  private employeeSelected$:Observable<Employee>;
   employee:Employee;
   constructor( private router:Router,
     private employeeService:EmployeeService) { }

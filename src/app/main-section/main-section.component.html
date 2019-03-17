@@ -1,6 +1,12 @@
   <h2 class="main-heading">{{mainSectionContent.mainheading}} - <small>{{mainSectionContent.mainsubheading}}</small></h2>
   <div class="jumbotron main-section-jumbotron">
     <h3>{{mainSectionContent.sectionheading}}</h3>
+   <div  *ngIf="mainSectionContent?.buttontext?.length > 0" >
+   <button type="button" 
+   class="btn btn-outline-success create-detail">
+   {{mainSectionContent.buttontext}}</button>
+  </div>
+
     <ngb-alert [dismissible]="false" type="success" *ngIf="showResetMessage"> 
       Password has been reset successfully 
     </ngb-alert>

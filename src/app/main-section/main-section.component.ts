@@ -16,14 +16,13 @@ export class MainSectionComponent implements OnInit {
   mainSectionContent:MainSectionContent;
   actionSuccess$:Observable<string>;
 
-  constructor(private mainSectionContentService:MainSectionContentService,private cdf: ChangeDetectorRef) { }
+  constructor(private mainSectionContentService:MainSectionContentService) { }
 
   ngOnInit() {
     this.mainSectionContentService.contentAnnounce$
     .subscribe(mainSectionContent => 
       {
         this.mainSectionContent = mainSectionContent
-        this.cdf.detectChanges(); //https://stackoverflow.com/questions/55293954/expressionchangedafterithasbeencheckederror-shared-service/55294187#55294187
       }
       );
       this.actionSuccess$ = this.mainSectionContentService.actionSuccess$;

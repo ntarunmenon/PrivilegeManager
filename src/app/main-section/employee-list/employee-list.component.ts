@@ -5,6 +5,7 @@ import { EmployeeService } from 'src/app/employee.service';
 import { Employee } from 'src/app/model/employee';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { CONTENT_TYPE } from 'src/app/model/section-type';
 
 @Component({
   selector: 'app-employee-list',
@@ -27,7 +28,8 @@ export class EmployeeListComponent implements OnInit {
         mainheading:'Employee Manger',
         mainsubheading:'To manage PrivilegeManager Employees',
         sectionheading:'Employee List',
-        buttontext:'Create Employee'
+        buttontext:'Create Employee',
+        sectionType: CONTENT_TYPE.Employee
       });
 
       this.employees$ = this.employeeService.getEmployees();

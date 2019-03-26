@@ -3,7 +3,7 @@
     <h3>{{mainSectionContent.sectionheading}}</h3>
    <div  *ngIf="mainSectionContent?.buttontext?.length > 0" >
    <button type="button" 
-   class="btn btn-outline-success create-detail">
+   class="btn btn-outline-success create-detail" (click)="onClickCreate()">
    {{mainSectionContent.buttontext}}</button>
   </div>
 

@@ -4,6 +4,7 @@ import { OfficeService } from 'src/app/office.service';
 import { Office } from 'src/app/model/office';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { CONTENT_TYPE } from 'src/app/model/section-type';
 
 @Component({
   selector: 'app-office-list',
@@ -23,7 +24,8 @@ export class OfficeListComponent implements OnInit {
       mainheading:'Employee Locations',
       mainsubheading:'To Manage Employee locations',
       sectionheading:'Employee Office Locations',
-      buttontext:'Create Location'
+      buttontext:'Create Location',
+      sectionType: CONTENT_TYPE.Office
     });
 
     this.officeLocations$ = this.officeService.getOfficeLocations();

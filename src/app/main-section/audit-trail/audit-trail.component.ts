@@ -18,13 +18,14 @@ export class AuditTrailComponent implements OnInit {
     private auditTrailService:AuditTrailService) { }
 
   ngOnInit() {
-    this.mainSectionContentService.announceContent({
-      mainheading:'Employee Activities',
-      mainsubheading:' To list all the activities performed',
-      sectionheading:'Employee Activity',
-      sectionType: CONTENT_TYPE.Audit
+    setTimeout(() => {
+      this.mainSectionContentService.announceContent({
+        mainheading:'Employee Activities',
+        mainsubheading:' To list all the activities performed',
+        sectionheading:'Employee Activity',
+        sectionType: CONTENT_TYPE.Audit
+      });
     });
-
     this.auditTrails$ = this.auditTrailService.getAuditTrails();
   }
 

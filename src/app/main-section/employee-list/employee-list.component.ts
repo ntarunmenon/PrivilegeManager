@@ -24,14 +24,15 @@ export class EmployeeListComponent implements OnInit {
 
     ngOnInit() {
       this. modalActionType = "NONE";
-      this.mainSectionContentService.announceContent({
-        mainheading:'Employee Manger',
-        mainsubheading:'To manage PrivilegeManager Employees',
-        sectionheading:'Employee List',
-        buttontext:'Create Employee',
-        sectionType: CONTENT_TYPE.Employee
+      setTimeout(() => {
+        this.mainSectionContentService.announceContent({
+          mainheading:'Employee Manger',
+          mainsubheading:'To manage PrivilegeManager Employees',
+          sectionheading:'Employee List',
+          buttontext:'Create Employee',
+          sectionType: CONTENT_TYPE.Employee
+        });
       });
-
       this.employees$ = this.employeeService.getEmployees();
     }
 

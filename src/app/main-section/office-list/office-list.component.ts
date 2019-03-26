@@ -20,14 +20,16 @@ export class OfficeListComponent implements OnInit {
     private router:Router) { }
 
   ngOnInit() {
-    this.mainSectionContentService.announceContent({
-      mainheading:'Employee Locations',
-      mainsubheading:'To Manage Employee locations',
-      sectionheading:'Employee Office Locations',
-      buttontext:'Create Location',
-      sectionType: CONTENT_TYPE.Office
+ 
+    setTimeout(() => { // https://stackoverflow.com/questions/55293954/expressionchangedafterithasbeencheckederror-shared-service
+      this.mainSectionContentService.announceContent({
+        mainheading:'Employee Locations',
+        mainsubheading:'To Manage Employee locations',
+        sectionheading:'Employee Office Locations',
+        buttontext:'Create Location',
+        sectionType: CONTENT_TYPE.Office
+      });
     });
-
     this.officeLocations$ = this.officeService.getOfficeLocations();
   }
 

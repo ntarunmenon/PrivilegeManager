@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
 import { MainSectionContentService } from './main-section-content-service';
 import { MainSectionContent } from '../model/main-section-content';
 import { Observable } from 'rxjs';
@@ -16,13 +16,14 @@ export class MainSectionComponent implements OnInit {
   mainSectionContent:MainSectionContent;
   actionSuccess$:Observable<string>;
 
-  constructor(private mainSectionContentService:MainSectionContentService) { }
+  constructor(private mainSectionContentService:MainSectionContentService,private cdf: ChangeDetectorRef) { }
 
   ngOnInit() {
     this.mainSectionContentService.contentAnnounce$
     .subscribe(mainSectionContent => 
       {
         this.mainSectionContent = mainSectionContent
+        this.cdf.detectChanges(); //https://stackoverflow.com/questions/55293954/expressionchangedafterithasbeencheckederror-shared-service/55294187#55294187
       }
       );
       this.actionSuccess$ = this.mainSectionContentService.actionSuccess$;

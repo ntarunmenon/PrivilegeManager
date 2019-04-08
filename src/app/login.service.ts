@@ -24,8 +24,8 @@ export class LoginService {
 
   login (username,password) : Observable<User> {
    return this.http.post<User>(this.loginUrl,{
-      username,
-      password
+      user: username,
+      password: password
     }
     ).pipe(
       map (user => {

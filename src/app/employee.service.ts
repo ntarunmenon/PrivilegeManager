@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Employee } from './model/employee';
 import { BehaviorSubject, Subject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -54,4 +54,13 @@ export class EmployeeService {
     this.subject.next(employee);
   }
 
+  saveEmployee(employee: Employee) {
+    return this.http.post<HttpResponse<String>>(this.employeesUrl,employee)
+    .subscribe(response => {
+      return true
+    },
+    error => {
+      return false
+    })
+  }
 }

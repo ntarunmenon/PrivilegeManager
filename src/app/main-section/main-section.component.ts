@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { tap, debounceTime } from 'rxjs/operators';
 import { CONTENT_TYPE } from '../model/section-type';
 import { Router } from '@angular/router';
+import { MainSectionMessage } from '../model/main-section-messsage';
 
 @Component({
   selector: 'app-main-section',
@@ -13,10 +14,11 @@ import { Router } from '@angular/router';
 })
 export class MainSectionComponent implements OnInit {
 
-  showResetMessage = false;
+  showMessage = false;
+  userMessage : string = ""
   showDisableMessage = false;
   mainSectionContent:MainSectionContent;
-  actionSuccess$:Observable<string>;
+  actionSuccess$:Observable<MainSectionMessage>;
 
   constructor(private mainSectionContentService:MainSectionContentService,
     private router:Router) { }
@@ -30,16 +32,17 @@ export class MainSectionComponent implements OnInit {
       );
       this.actionSuccess$ = this.mainSectionContentService.actionSuccess$;
 
-      this.actionSuccess$.
-        subscribe(data => {
-          data === 'DISABLE' ? this.showDisableMessage = true:this.showResetMessage = true;
-        });
+      this.actionSuccess$.subscribe(data => {
+        this.showMessage = true
+        this.userMessage = MainSectionMessage.getMessage(data)
+      });
 
       this.actionSuccess$.pipe(
         debounceTime(5000)
-      ).subscribe((data) => 
-       data === 'DISABLE' ? this.showDisableMessage = false:this.showResetMessage = false
-      )
+      ).subscribe( data => { 
+        this.showMessage = false
+        this.userMessage = ""
+      })
   }
 
   onClickCreate() {

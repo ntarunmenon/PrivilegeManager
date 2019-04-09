@@ -80,4 +80,8 @@ export class EmployeeDetailComponent implements OnInit {
     this.router.navigate(['/landing/main-section/employees-list']);
   }
 
+  update() {
+    console.log(this.employeeDetailForm.value)
+  }
+
 }

@@ -1,7 +1,7 @@
 <div class="card employee-card">
       <h5 class="card-title employee-card-title">Card title</h5>
       <div class="card-body">
-          <form [formGroup]="employeeDetailForm">
+          <form [formGroup]="employeeDetailForm" (ngSubmit)="update()">
               <div class="form-group">
                   <label for="nameEN">Name (En)</label>
                   <input type="text" class="form-control" id="nameEN" 
@@ -68,7 +68,7 @@
                         formControlName="empEmail">
                       </div>  
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-outline-success" 
+                        <button type="submit" class="btn btn-outline-success" 
                         [disabled]="!employeeDetailForm.valid">Update</button>
                         <button type="button" class="btn btn-outline-warning" 
                         style="margin-left:1rem" (click)="cancel()">Cancel</button>

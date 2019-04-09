@@ -6,6 +6,7 @@ import { Employee } from 'src/app/model/employee';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { CONTENT_TYPE } from 'src/app/model/section-type';
+import { MainSectionMessage } from 'src/app/model/main-section-messsage';
 
 @Component({
   selector: 'app-employee-list',
@@ -42,9 +43,9 @@ export class EmployeeListComponent implements OnInit {
     .result.then((saveOrCancel) => {
       if(saveOrCancel === 'Save' ){
         if(this.modalActionType === 'Disable'){
-          this.mainSectionContentService.actionSuccessEvent('DISABLE');
+          this.mainSectionContentService.actionSuccessEvent(MainSectionMessage.DISABLE_EMPLOYEE);
         } else {
-          this.mainSectionContentService.actionSuccessEvent('RESET');
+          this.mainSectionContentService.actionSuccessEvent(MainSectionMessage.RESET_PASSWORD);
         }
       }
     }, (dismissReason) => {

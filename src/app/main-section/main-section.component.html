@@ -7,11 +7,8 @@
    {{mainSectionContent?.buttontext}}</button>
   </div>
 
-    <ngb-alert [dismissible]="false" type="success" *ngIf="showResetMessage"> 
-      Password has been reset successfully 
-    </ngb-alert>
-    <ngb-alert [dismissible]="false" type="success" *ngIf="showDisableMessage">
-      Employee has been disabled successfully 
+    <ngb-alert [dismissible]="false" type="success" *ngIf="showMessage"> 
+      {{userMessage}}
     </ngb-alert>
     <div>
       <router-outlet></router-outlet>

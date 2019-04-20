@@ -55,6 +55,7 @@ export class EmployeeService {
   }
 
   saveEmployee(employee: Employee) {
+    console.log('inside save')
     return this.http.post<HttpResponse<String>>(this.employeesUrl,employee)
     .subscribe(response => {
       return true

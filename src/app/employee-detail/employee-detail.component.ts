@@ -82,6 +82,9 @@ export class EmployeeDetailComponent implements OnInit {
 
   update() {
     console.log(this.employeeDetailForm.value)
+    this.employeeService.saveEmployee(this.employeeDetailForm.value)
+    console.log('Finished Save')
+    this.router.navigate(['/landing/main-section/employees-list']);
   }
 
 }

@@ -11,8 +11,8 @@ import { Role } from './model/role';
 export class EmployeeService {
 
   employeesUrl = '/api/employees';
-  private subject:Subject<Employee> = new BehaviorSubject<Employee>(null);
-  employeeSelected$:Observable<Employee> = this.subject.asObservable();
+  private subject: Subject<Employee> = new BehaviorSubject<Employee>(null);
+  employeeSelected$: Observable<Employee> = this.subject.asObservable();
 
   constructor(private http: HttpClient) { }
 
@@ -26,9 +26,9 @@ export class EmployeeService {
             element['srvEmpRoleList'].forEach((emploeeObj: any) => {
                 roles.push({
                   srvRoleId: emploeeObj['roleId']['srvRoleId'],
-                  roleName:emploeeObj['roleId']['roleName']
+                  roleName: emploeeObj['roleId']['roleName']
                 });
-              })
+              });
 
             employees.push({
               mntEmpId: element['mntEmpId'],
@@ -42,7 +42,7 @@ export class EmployeeService {
               empTelNo: element['empTelNo'],
               roles: roles
               });
-            })
+            });
           return employees;
         })
       );
@@ -53,13 +53,13 @@ export class EmployeeService {
   }
 
   saveEmployee(employee: Employee) {
-    console.log('inside save')
-    return this.http.post<HttpResponse<String>>(this.employeesUrl,employee)
+    console.log('inside save');
+    return this.http.post<HttpResponse<String>>(this.employeesUrl, employee)
     .subscribe(response => {
-      return true
+      return true;
     },
     error => {
-      return false
-    })
+      return false;
+    });
   }
 }

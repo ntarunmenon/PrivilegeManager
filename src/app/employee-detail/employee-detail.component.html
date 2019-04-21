@@ -40,18 +40,10 @@
                       </div> 
                       <div class="form-group">
                           <label>Employee privilege</label>
-                          <!-- <select id="employeePrivelege" data-style="btn-default" 
-                          class="selectpicker form-control" 
-                          formControlName="employeePriveleges"
-                          multiple data-max-options="2">      
-                            <option selected>Mustard</option>
-                            <option selected>Barbecue</option>
-                              </select> -->
                       <ng-multiselect-dropdown
                               [settings]="dropdownSettings"
                               [data]="dropdownList"
-                             formControlName="employeePriveleges"
-                              > 
+                             formControlName="roles"> 
                         </ng-multiselect-dropdown>
                       </div> 
                     <div class="form-group">

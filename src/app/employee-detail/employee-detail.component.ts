@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
-import { filter,tap } from 'rxjs/operators';
+import { filter, tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { Employee } from '../model/employee';
 import { MainSectionContentService } from '../main-section/main-section-content-service';
@@ -17,24 +17,26 @@ export class EmployeeDetailComponent implements OnInit {
   dropdownSettings = {};
   dropdownList = [];
   selectedItems = [];
+  isUpdate = false;
 
   employeeDetailForm = new FormGroup({
     empNameEn: new FormControl(''),
     empNameAr: new FormControl(''),
     empGprNo: new FormControl(''),
-    empCode: new FormControl('',Validators.required),
+    empCode: new FormControl('', Validators.required),
     isActive: new FormControl(''),
-    employeePriveleges: new FormControl('',Validators.required),
+    roles: new FormControl('', Validators.required),
     empTelNo: new FormControl(''),
-    empEmail: new FormControl('',Validators.required),
+    empEmail: new FormControl('', Validators.required),
   });
 
-  
-  employee:Employee;
-  constructor( private router:Router,
-    private employeeService:EmployeeService) { }
+
+  employee: Employee;
+  constructor( private router: Router, private employeeService: EmployeeService) { }
 
   ngOnInit() {
+    console.log('inside init');
+    this.employeeDetailForm.reset();
 
     this.dropdownSettings = {
       singleSelection: false,
@@ -52,18 +54,19 @@ export class EmployeeDetailComponent implements OnInit {
       { srvRoleId: 3, roleName: 'TRADING_SYSTEM_OFFICER' },
       { srvRoleId: 4, roleName: 'SALES_MANAGER' },
     ];
- 
+
 
    this.employeeService.employeeSelected$.pipe(
       filter(employee => employee != null)
     ).subscribe(emplyee => {
-      console.log(emplyee)
-      this.employee = emplyee
-      this.updateEmployeeForm(emplyee)
+      console.log(emplyee);
+      this.employee = emplyee;
+      this.updateEmployeeForm(emplyee);
+      this.isUpdate = true;
     });
   }
 
-  updateEmployeeForm(employee:Employee) {
+  updateEmployeeForm(employee: Employee) {
       this.employeeDetailForm.setValue({
         empNameEn: employee.empNameEn,
         empNameAr: employee.empNameAr,
@@ -72,7 +75,7 @@ export class EmployeeDetailComponent implements OnInit {
         isActive: employee.isActive,
         empTelNo: employee.empTelNo,
         empEmail: employee.empEmail,
-        employeePriveleges:employee.roles
+        roles: employee.roles
       });
   }
 
@@ -81,9 +84,19 @@ export class EmployeeDetailComponent implements OnInit {
   }
 
   update() {
-    console.log(this.employeeDetailForm.value)
-    this.employeeService.saveEmployee(this.employeeDetailForm.value)
-    console.log('Finished Save')
+    const updateEmployee: Employee = this.employeeDetailForm.value;
+    if (this.isUpdate) {
+      this.employee.empNameEn = updateEmployee.empNameEn;
+      this.employee.empNameAr = updateEmployee.empNameAr;
+      this.employee.empGprNo = updateEmployee.empGprNo;
+      this.employee.isActive = updateEmployee.isActive;
+      this.employee.empTelNo = updateEmployee.empTelNo;
+      this.employee.roles = updateEmployee.roles;
+      this.employeeService.saveEmployee(this.employee);
+    } else {
+      this.employeeService.saveEmployee(updateEmployee);
+    }
+    console.log('Finished Save');
     this.router.navigate(['/landing/main-section/employees-list']);
   }
 

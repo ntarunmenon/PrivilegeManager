@@ -54,7 +54,7 @@ export class EmployeeListComponent implements OnInit {
     return false;
   }
 
-  editEmployee(employee:Employee){
+  editEmployee(employee: Employee) {
     this.employeeService.selectEmployee(employee);
     this.router.navigate(['/landing/main-section/employee-detail']);
   }

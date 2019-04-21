@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Office } from './model/office';
 import { Subject, BehaviorSubject, Observable } from 'rxjs';
 
@@ -22,5 +22,16 @@ export class OfficeService {
 
   selectOffice(office:Office){
     this.subject.next(office);
+  }
+
+  saveOffice(office: Office) {
+    console.log('inside save')
+    return this.http.post<HttpResponse<String>>(this.officeUrl, office)
+    .subscribe(response => {
+      return true
+    },
+    error => {
+      return false
+    })
   }
 }

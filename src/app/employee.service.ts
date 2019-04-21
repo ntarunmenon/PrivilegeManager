@@ -19,30 +19,28 @@ export class EmployeeService {
   getEmployees() {
     return this.http.get<Employee[]>(this.employeesUrl)
       .pipe(
-        map((data :Object[]) => {
-          let employees:Employee[] = [];  
-         
-
+        map((data : Object[]) => {
+          const employees: Employee[] = [];
           data.forEach(function (element) {
-            let roles:Role[] = [];  
-            element["srvEmpRoleList"].forEach((emploeeObj: any) => {
+            const roles: Role[] = [];  
+            element['srvEmpRoleList'].forEach((emploeeObj: any) => {
                 roles.push({
-                  srvRoleId: emploeeObj["roleId"]["srvRoleId"],
-                  roleName:emploeeObj["roleId"]["roleName"]
+                  srvRoleId: emploeeObj['roleId']['srvRoleId'],
+                  roleName:emploeeObj['roleId']['roleName']
                 });
               })
 
             employees.push({
-              mntEmpId:element["mntEmpId"],
-              empNameEn:element["empNameEn"],
-              empNameAr:element["empNameAr"],
-              empGprNo:element["empGprNo"],
-              isActive:element["isActive"],
-              empCode:element["empCode"],
-              modifiedDate:element["modifiedDate"],
-              empEmail:element["empEmail"],
-              empTelNo:element["empTelNo"],
-              roles:roles
+              mntEmpId: element['mntEmpId'],
+              empNameEn: element['empNameEn'],
+              empNameAr: element['empNameAr'],
+              empGprNo: element['empGprNo'],
+              isActive: element['isActive'],
+              empCode: element['empCode'],
+              modifiedDate: element['modifiedDate'],
+              empEmail: element['empEmail'],
+              empTelNo: element['empTelNo'],
+              roles: roles
               });
             })
           return employees;
@@ -50,7 +48,7 @@ export class EmployeeService {
       );
   }
 
-  selectEmployee(employee:Employee){
+  selectEmployee(employee: Employee) {
     this.subject.next(employee);
   }
 

@@ -6,6 +6,8 @@ import { tap, debounceTime } from 'rxjs/operators';
 import { CONTENT_TYPE } from '../model/section-type';
 import { Router } from '@angular/router';
 import { MainSectionMessage } from '../model/main-section-messsage';
+import { OfficeService } from '../office.service';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-main-section',
@@ -20,8 +22,8 @@ export class MainSectionComponent implements OnInit {
   mainSectionContent:MainSectionContent;
   actionSuccess$:Observable<MainSectionMessage>;
 
-  constructor(private mainSectionContentService:MainSectionContentService,
-    private router:Router) { }
+  constructor(private mainSectionContentService:MainSectionContentService,private officeService:OfficeService,
+    private employeeService: EmployeeService, private router: Router) { }
 
   ngOnInit() {
     this.mainSectionContentService.contentAnnounce$
@@ -47,8 +49,10 @@ export class MainSectionComponent implements OnInit {
 
   onClickCreate() {
     if (this.mainSectionContent.sectionType === CONTENT_TYPE.Employee) {
+      this.employeeService.selectEmployee(null)
       this.router.navigate(['/landing/main-section/employee-detail']);
     } else {
+      this.officeService.selectOffice(null);
       this.router.navigate(['/landing/main-section/location-detail']);
     }
   }

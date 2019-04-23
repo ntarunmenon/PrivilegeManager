@@ -28,6 +28,7 @@ export class LocationDetailComponent implements OnInit {
     this.officeService.officeSelected$.pipe(
       filter(office => office != null)
     ).subscribe(office => {
+      console.log(office)
       this.office = office;
       this.isUpdate = true;
     });

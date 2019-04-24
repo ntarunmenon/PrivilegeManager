@@ -93,6 +93,7 @@ export class EmployeeDetailComponent implements OnInit {
       this.employee.empTelNo = updateEmployee.empTelNo;
       this.employee.roles = updateEmployee.roles;
       this.employeeService.saveEmployee(this.employee);
+      this.employee.enabled = true;
     } else {
       this.employeeService.saveEmployee(updateEmployee);
     }

@@ -10,5 +10,6 @@ export interface Employee {
     modifiedDate: Date;
     empEmail: string;
     empTelNo: string;
+    enabled: boolean;
     roles: Role[];
 }

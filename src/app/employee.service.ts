@@ -19,10 +19,10 @@ export class EmployeeService {
   getEmployees() {
     return this.http.get<Employee[]>(this.employeesUrl)
       .pipe(
-        map((data : Object[]) => {
+        map((data: Object[]) => {
           const employees: Employee[] = [];
           data.forEach(function (element) {
-            const roles: Role[] = [];  
+            const roles: Role[] = [];
             element['srvEmpRoleList'].forEach((emploeeObj: any) => {
                 roles.push({
                   srvRoleId: emploeeObj['roleId']['srvRoleId'],
@@ -40,6 +40,7 @@ export class EmployeeService {
               modifiedDate: element['modifiedDate'],
               empEmail: element['empEmail'],
               empTelNo: element['empTelNo'],
+              enabled: element['enabled'],
               roles: roles
               });
             });
@@ -62,4 +63,16 @@ export class EmployeeService {
       return false;
     });
   }
+
+  resetPassword(mntEmpId: string) {
+    console.log('inside save');
+    return this.http.patch<HttpResponse<String>>(this.employeesUrl, {mntEmpId : mntEmpId, actionType : 'ResetPassword' })
+    .subscribe(response => {
+      return true;
+    },
+    error => {
+      return false;
+    });
+  }
+
 }

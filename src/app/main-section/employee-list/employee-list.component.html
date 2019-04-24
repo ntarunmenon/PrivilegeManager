@@ -41,8 +41,8 @@
       <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
         <div class="dropdown-menu" ngbDropdownMenu>
           <a class="dropdown-item" (click)="editEmployee(employee)">Edit</a>
-          <a class="dropdown-item" (click)="openModal(content,'Disable')">Disable</a>
-          <a class="dropdown-item" (click)="openModal(content,'Reset')">Reset Password</a>
+          <a class="dropdown-item" (click)="openModal(content,'Disable',employee)">Disable</a>
+          <a class="dropdown-item" (click)="openModal(content,'Reset',employee)">Reset Password</a>
         </div>
       </td>
     </tr>

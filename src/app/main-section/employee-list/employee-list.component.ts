@@ -24,6 +24,7 @@ export class EmployeeListComponent implements OnInit {
     private router: Router) {}
 
     ngOnInit() {
+   console.log('inside employees list')
       this. modalActionType = 'NONE';
       setTimeout(() => {
         this.mainSectionContentService.announceContent({

@@ -34,14 +34,14 @@
       <th scope="row">1</th>
       <td>{{employee.empNameEn}}</td>
       <td>{{employee.empNameAr}}</td>
-      <td>Enabled</td>
+      <td>{{employee.enabled ? 'enabled':'disabled'}}</td>
       <td>{{employee.empCode}}</td>
       <td>{{employee.empGprNo}}</td>
       <td>{{employee.modifiedDate}}</td>
       <td ngbDropdown><i class="fas fa-align-justify" id="dropdownMenuButton" ngbDropdownToggle></i>
         <div class="dropdown-menu" ngbDropdownMenu>
           <a class="dropdown-item" (click)="editEmployee(employee)">Edit</a>
-          <a class="dropdown-item" (click)="openModal(content,'Disable',employee)">Disable</a>
+          <a class="dropdown-item" (click)="openModal(content,'Disable',employee)">{{employee.enabled ? 'Disable':'Enable'}}</a>
           <a class="dropdown-item" (click)="openModal(content,'Reset',employee)">Reset Password</a>
         </div>
       </td>
